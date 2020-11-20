@@ -44,7 +44,37 @@ export default (() => {
 							<Override slot="text" />
 							<Override slot="text1" />
 						</Components.ToolCard>
+						<Components.ToolCard>
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
 						<Components.ToolCard max-width="150px" width="130px" grid-column="2">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px" grid-column="2">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px" grid-column="3">
 							<Override slot="icon" />
 							<Override slot="image" />
 							<Override slot="text" />
@@ -62,13 +92,19 @@ export default (() => {
 							<Override slot="text" />
 							<Override slot="text1" />
 						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px" grid-column="4">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
 						<Components.ToolCard max-width="150px" width="130px" grid-column="5">
 							<Override slot="icon" />
 							<Override slot="image" />
 							<Override slot="text" />
 							<Override slot="text1" />
 						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px">
+						<Components.ToolCard max-width="150px" width="130px" grid-column="5">
 							<Override slot="icon" />
 							<Override slot="image" />
 							<Override slot="text" />

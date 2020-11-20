@@ -22,11 +22,12 @@ const overrides = {
 			"top": "45px",
 			"right": "492px",
 			"bottom": "auto",
-			"width": "24px",
-			"height": "24px",
 			"left": "0px",
 			"display": "inline",
-			"align-self": "flex-start"
+			"align-self": "flex-start",
+			"font": "6px --fontFamily-googleOpenSans",
+			"width": "auto",
+			"height": "auto"
 		}
 	},
 	"image": {
