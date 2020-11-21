@@ -5,7 +5,9 @@ const defaultProps = {
 	"quarkly-title": "Slots Static",
 	"display": "flex",
 	"flex-direction": "column",
-	"align-items": "flex-start"
+	"align-items": "flex-start",
+	"bottom": "16px",
+	"overflow-x": "hidden"
 };
 const overrides = {
 	"text": {
@@ -15,8 +17,10 @@ const overrides = {
 			"position": "static",
 			"bottom": "24px",
 			"quarkly-title": "slots total number",
-			"margin": "16px 0px 8px 0px",
-			"children": "Slots Total"
+			"font": "--bold16",
+			"margin": "0 0px 4px 0px",
+			"overflow-x": "hidden",
+			"children": "100"
 		}
 	},
 	"text1": {
@@ -26,11 +30,10 @@ const overrides = {
 			"position": "static",
 			"bottom": "24px",
 			"quarkly-title": "slots total number",
-			"margin": "8px 0px 16px 0px",
-			"children": <>
-				100
-				<br />
-			</>
+			"font": "--thin16",
+			"margin": "0 0px 16px 0px",
+			"overflow-x": "hidden",
+			"children": "Slots Total"
 		}
 	}
 };
