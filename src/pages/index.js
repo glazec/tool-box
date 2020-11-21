@@ -39,7 +39,7 @@ export default (() => {
 				>
 					Inevitable
 				</Text>
-				<Box position="absolute" bottom={0} margin="0px 0px 16 0px">
+				<Box position="absolute" bottom={0} margin="0px 0px 16 0px" top="auto">
 					<Components.SlotsInfo bottom={0} top="auto" />
 				</Box>
 			</Box>
@@ -131,7 +131,6 @@ export default (() => {
 				background="#0000"
 			/>
 		</Box>
-		<Box />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
