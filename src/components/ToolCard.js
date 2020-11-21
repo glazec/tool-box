@@ -28,7 +28,8 @@ const overrides = {
 			"align-self": "flex-start",
 			"width": "auto",
 			"height": "auto",
-			"font": "0.3em --fontFamily-googleOpenSans"
+			"font": "0.3em --fontFamily-googleOpenSans",
+			"size": "8px"
 		}
 	},
 	"image": {
