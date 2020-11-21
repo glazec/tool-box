@@ -10,7 +10,8 @@ const defaultProps = {
 	"max-width": "150px",
 	"width": "130px",
 	"border-width": "1px",
-	"border-style": "solid"
+	"border-style": "solid",
+	"margin": "0px 16px 16px 0px"
 };
 const overrides = {
 	"icon": {

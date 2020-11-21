@@ -20,8 +20,16 @@ export default (() => {
 					<Text quarkly-title="Title" color="--textWhite" font="--heading2">
 						Inevitable
 					</Text>
-					<Box position="absolute" bottom="32px" quarkly-title="foot static info">
-						<Components.SlotsInfo>
+					<Box
+						position="fixed"
+						bottom="48px"
+						quarkly-title="foot static info"
+						width="118.56922137920674px"
+						height="auto"
+						left="16px"
+						right="877.4307786207933px"
+					>
+						<Components.SlotsInfo position="absolute">
 							<Override slot="text" font="--bold16" margin="0 0px 4px 0px">
 								100
 							</Override>
@@ -38,43 +46,13 @@ export default (() => {
 				<Section>
 					<Override slot="SectionContent" align-items="center" />
 					<Box display="grid" quarkly-title="Tools Grid" width="100%" grid-auto-columns="5">
-						<Components.ToolCard>
+						<Components.ToolCard grid-column="1">
 							<Override slot="icon" />
 							<Override slot="image" />
 							<Override slot="text" />
 							<Override slot="text1" />
 						</Components.ToolCard>
-						<Components.ToolCard>
-							<Override slot="icon" />
-							<Override slot="image" />
-							<Override slot="text" />
-							<Override slot="text1" />
-						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px" grid-column="2">
-							<Override slot="icon" />
-							<Override slot="image" />
-							<Override slot="text" />
-							<Override slot="text1" />
-						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px" grid-column="2">
-							<Override slot="icon" />
-							<Override slot="image" />
-							<Override slot="text" />
-							<Override slot="text1" />
-						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px">
-							<Override slot="icon" />
-							<Override slot="image" />
-							<Override slot="text" />
-							<Override slot="text1" />
-						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px">
-							<Override slot="icon" />
-							<Override slot="image" />
-							<Override slot="text" />
-							<Override slot="text1" />
-						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px" grid-column="3">
+						<Components.ToolCard grid-column="2">
 							<Override slot="icon" />
 							<Override slot="image" />
 							<Override slot="text" />
@@ -92,19 +70,133 @@ export default (() => {
 							<Override slot="text" />
 							<Override slot="text1" />
 						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px" grid-column="4">
-							<Override slot="icon" />
-							<Override slot="image" />
-							<Override slot="text" />
-							<Override slot="text1" />
-						</Components.ToolCard>
 						<Components.ToolCard max-width="150px" width="130px" grid-column="5">
 							<Override slot="icon" />
 							<Override slot="image" />
 							<Override slot="text" />
 							<Override slot="text1" />
 						</Components.ToolCard>
-						<Components.ToolCard max-width="150px" width="130px" grid-column="5">
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
+							<Override slot="icon" />
+							<Override slot="image" />
+							<Override slot="text" />
+							<Override slot="text1" />
+						</Components.ToolCard>
+						<Components.ToolCard max-width="150px" width="130px">
 							<Override slot="icon" />
 							<Override slot="image" />
 							<Override slot="text" />
