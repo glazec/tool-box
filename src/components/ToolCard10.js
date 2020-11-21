@@ -7,12 +7,13 @@ const defaultProps = {
 	"flex-direction": "column",
 	"padding": "8px 8px 8px 8px",
 	"align-items": "center",
-	"max-width": "150px",
 	"border-width": "1px",
 	"border-style": "solid",
-	"width": "300px",
 	"margin": "0px 0px 0 0px",
-	"grid-column": "auto"
+	"grid-column": "auto",
+	"max-height": "256px",
+	"width": "auto",
+	"max-width": "245px"
 };
 const overrides = {
 	"icon": {
@@ -59,7 +60,8 @@ const overrides = {
 			"margin": "0 0px 16px 0px",
 			"children": <>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus{" "}
-			</>
+			</>,
+			"text-align": "center"
 		}
 	}
 };

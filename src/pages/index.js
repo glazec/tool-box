@@ -84,20 +84,29 @@ export default (() => {
 					grid-column="2"
 					grid-row="1"
 					quarkly-title="tools grid"
-					margin="64px 0px 0px 0px"
+					margin="64px 0px 64px 0px"
 					width="100%"
 					grid-auto-columns="4"
 					overflow-x="hidden"
-					grid-gap="16px"
+					grid-gap="32px"
 				>
 					<Components.ToolCard10>
 						<Override slot="image" />
+						<Override slot="text1" />
 					</Components.ToolCard10>
 					<Components.ToolCard10 grid-column="2" />
 					<Components.ToolCard10 grid-column="3" />
 					<Components.ToolCard10 grid-column="4" />
 					<Components.ToolCard10 />
+					<Components.ToolCard10 />
 					<Components.ToolCard10 grid-column="auto" />
+					<Components.ToolCard10 grid-column="auto" />
+					<Components.ToolCard10 />
+					<Components.ToolCard10 />
+					<Components.ToolCard10 />
+					<Components.ToolCard10 />
+					<Components.ToolCard10 />
+					<Components.ToolCard10 />
 					<Components.ToolCard10 />
 					<Components.ToolCard10 />
 				</Box>
