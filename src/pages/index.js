@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import * as Components from "components";
 export default (() => {
@@ -21,11 +21,12 @@ export default (() => {
 		>
 			<Box
 				background="--backgroundDark"
-				padding="32px 32px 32px 32px"
 				margin="0px 64px 0px 0px"
 				align-self="stretch"
 				grid-column="1"
 				grid-row="1"
+				quarkly-title="left panel"
+				padding="32px 32px 32px 32px"
 			>
 				<Text
 					color="--textWhite"
@@ -41,51 +42,70 @@ export default (() => {
 				</Box>
 			</Box>
 			<Box
-				display="grid"
-				grid-auto-columns="5"
-				width="auto"
-				background="rgba(241, 25, 25, 0)"
+				quarkly-title="main content"
 				grid-column="2"
 				grid-row="1"
+				padding="32px 0px 0px 0px"
+				display="block"
 			>
-				<Components.ToolCard grid-column="1" />
-				<Components.ToolCard grid-column="2" />
-				<Components.ToolCard grid-column="3" />
-				<Components.ToolCard grid-column="4" />
-				<Components.ToolCard grid-column="5" />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
-				<Components.ToolCard />
+				<Text
+					color="--textDark"
+					font="--heading2"
+					overflow-x="hidden"
+					quarkly-title="Title"
+					width="auto"
+				>
+					Tools
+				</Text>
+				<Box
+					display="grid"
+					grid-auto-columns="5"
+					width="auto"
+					background="rgba(241, 25, 25, 0)"
+					grid-column="2"
+					grid-row="1"
+					quarkly-title="tools grid"
+				>
+					<Components.ToolCard grid-column="1" />
+					<Components.ToolCard grid-column="2" />
+					<Components.ToolCard grid-column="3" />
+					<Components.ToolCard grid-column="4" />
+					<Components.ToolCard grid-column="5" />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+					<Components.ToolCard />
+				</Box>
 			</Box>
+			<Hr position="absolute" top="58px" width="100%" />
 		</Box>
 		<Link
 			font={"--capture"}

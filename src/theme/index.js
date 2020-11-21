@@ -38,7 +38,8 @@ export default {
 		"purple": "#FD6DF9",
 		"indigo": "#9B6CFC",
 		"textWhite": "#fdffff",
-		"backgroundDark": "#171e45"
+		"backgroundDark": "#171e45",
+		"textDark": "#1a2138"
 	},
 	"fontFamily": {
 		"sans": "-apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
