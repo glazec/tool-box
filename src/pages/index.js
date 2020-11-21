@@ -39,7 +39,7 @@ export default (() => {
 				>
 					Inevitable
 				</Text>
-				<Box position="absolute" bottom="2%" margin="0px 0px 16 0px" top="auto">
+				<Box position="fixed" bottom="2%" margin="0px 0px 16 0px" top="auto">
 					<Components.SlotsInfo bottom={0} top="auto" />
 				</Box>
 			</Box>
