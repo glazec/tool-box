@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Hr } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Button, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import * as Components from "components";
 export default (() => {
@@ -18,15 +18,16 @@ export default (() => {
 			justify-content="stretch"
 			grid-auto-columns="2"
 			grid-auto-rows="1"
+			background="#FFFFFF"
 		>
 			<Box
 				background="--backgroundDark"
 				margin="0px 64px 0px 0px"
-				align-self="stretch"
 				grid-column="1"
 				grid-row="1"
 				quarkly-title="left panel"
 				padding="32px 32px 32px 32px"
+				max-width="150px"
 			>
 				<Text
 					color="--textWhite"
@@ -34,10 +35,11 @@ export default (() => {
 					overflow-x="hidden"
 					quarkly-title="Title"
 					width="auto"
+					margin="0 0px 16px 0px"
 				>
 					Inevitable
 				</Text>
-				<Box position="absolute" bottom={0}>
+				<Box position="absolute" bottom={0} margin="0px 0px 16 0px">
 					<Components.SlotsInfo bottom={0} top="auto" />
 				</Box>
 			</Box>
@@ -48,12 +50,26 @@ export default (() => {
 				padding="32px 0px 0px 0px"
 				display="block"
 			>
+				<Button
+					background="rgba(0, 0, 0, 0)"
+					border-color="#989EAD"
+					border-width="1px"
+					border-style="solid"
+					color="#2F6BFF"
+					border-radius="15px"
+					position="absolute"
+					right="16px"
+					top="22px"
+				>
+					Build your own tool box
+				</Button>
 				<Text
 					color="--textDark"
 					font="--heading2"
 					overflow-x="hidden"
 					quarkly-title="Title"
 					width="auto"
+					margin="0 0px 32px 0px"
 				>
 					Tools
 				</Text>
@@ -65,6 +81,7 @@ export default (() => {
 					grid-column="2"
 					grid-row="1"
 					quarkly-title="tools grid"
+					margin="64px 0px 0px 0px"
 				>
 					<Components.ToolCard grid-column="1" />
 					<Components.ToolCard grid-column="2" />
@@ -105,8 +122,16 @@ export default (() => {
 					<Components.ToolCard />
 				</Box>
 			</Box>
-			<Hr position="absolute" top="58px" width="100%" />
+			<Hr
+				position="absolute"
+				top="66px"
+				width="100%"
+				color="#0000"
+				border-color="#F2F3F5"
+				background="#0000"
+			/>
 		</Box>
+		<Box />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

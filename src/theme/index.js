@@ -39,7 +39,8 @@ export default {
 		"indigo": "#9B6CFC",
 		"textWhite": "#fdffff",
 		"backgroundDark": "#171e45",
-		"textDark": "#1a2138"
+		"textDark": "#1a2138",
+		"horizontalLine": "rgba(253, 255, 255, 0.24)"
 	},
 	"fontFamily": {
 		"sans": "-apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -73,7 +74,8 @@ export default {
 	"background": {
 		"primaryGradient": "linear-gradient(180deg, --color-primary, transparent) no-repeat 0 0",
 		"secondaryGradient": "linear-gradient(180deg, --color-secondary, transparent) no-repeat 0 0",
-		"backgroundDark": "--color-backgroundDark"
+		"backgroundDark": "--color-backgroundDark",
+		"horizontalLine": "rgba(253, 255, 255, 0.24)"
 	},
 	"transform": {
 		"rotate90": "rotate(90deg)",
