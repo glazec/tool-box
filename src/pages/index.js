@@ -2,6 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text, Box, Button, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -83,7 +84,9 @@ export default (() => {
 					quarkly-title="tools grid"
 					margin="64px 0px 0px 0px"
 				>
-					<Components.ToolCard grid-column="1" />
+					<Components.ToolCard grid-column="1">
+						<Override slot="icon" />
+					</Components.ToolCard>
 					<Components.ToolCard grid-column="2" />
 					<Components.ToolCard grid-column="3" />
 					<Components.ToolCard grid-column="4" />

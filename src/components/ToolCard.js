@@ -26,9 +26,9 @@ const overrides = {
 			"left": "0px",
 			"display": "inline",
 			"align-self": "flex-start",
-			"font": "6px --fontFamily-googleOpenSans",
 			"width": "auto",
-			"height": "auto"
+			"height": "auto",
+			"font": "0.3em --fontFamily-googleOpenSans"
 		}
 	},
 	"image": {
