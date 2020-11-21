@@ -14,21 +14,23 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Box
-			display="grid"
+			display="flex"
 			padding="0px 0px 0px px"
-			justify-content="stretch"
 			grid-auto-columns="2"
 			grid-auto-rows="1"
 			background="#FFFFFF"
+			align-items="stretch"
+			justify-content="space-between"
 		>
 			<Box
 				background="--backgroundDark"
-				margin="0px 64px 0px 0px"
 				grid-column="1"
 				grid-row="1"
 				quarkly-title="left panel"
 				padding="32px 32px 32px 32px"
 				max-width="150px"
+				flex="1 1 10%"
+				margin="0px 5% 0px 0px"
 			>
 				<Text
 					color="--textWhite"
@@ -40,7 +42,7 @@ export default (() => {
 				>
 					Inevitable
 				</Text>
-				<Box position="relative" bottom="2%" margin="0px 0px 16 0px" top="95%">
+				<Box position="relative" margin="0px 0px 16 0px" top="95%" bottom="2%">
 					<Components.SlotsInfo bottom={0} top="auto" />
 				</Box>
 			</Box>
@@ -50,6 +52,8 @@ export default (() => {
 				grid-row="1"
 				padding="32px 0px 0px 0px"
 				display="block"
+				justify-self="stretch"
+				flex="1  5 80%"
 			>
 				<Button
 					background="rgba(0, 0, 0, 0)"
@@ -76,53 +80,26 @@ export default (() => {
 				</Text>
 				<Box
 					display="grid"
-					grid-auto-columns="5"
-					width="auto"
 					background="rgba(241, 25, 25, 0)"
 					grid-column="2"
 					grid-row="1"
 					quarkly-title="tools grid"
 					margin="64px 0px 0px 0px"
+					width="100%"
+					grid-auto-columns="4"
+					overflow-x="hidden"
+					grid-gap="16px"
 				>
-					<Components.ToolCard grid-column="1">
-						<Override slot="icon" />
-					</Components.ToolCard>
-					<Components.ToolCard grid-column="2" />
-					<Components.ToolCard grid-column="3" />
-					<Components.ToolCard grid-column="4" />
-					<Components.ToolCard grid-column="5" />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
-					<Components.ToolCard />
+					<Components.ToolCard10>
+						<Override slot="image" />
+					</Components.ToolCard10>
+					<Components.ToolCard10 grid-column="2" />
+					<Components.ToolCard10 grid-column="3" />
+					<Components.ToolCard10 grid-column="4" />
+					<Components.ToolCard10 />
+					<Components.ToolCard10 grid-column="auto" />
+					<Components.ToolCard10 />
+					<Components.ToolCard10 />
 				</Box>
 			</Box>
 			<Hr
