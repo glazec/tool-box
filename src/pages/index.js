@@ -4,6 +4,9 @@ import { Theme, Link, Text, Box, Button, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override } from "@quarkly/components";
 import * as Components from "components";
+import ToolCardGrid from "components/ToolCardGrid"
+
+
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -78,38 +81,7 @@ export default (() => {
 				>
 					Tools
 				</Text>
-				<Box
-					display="grid"
-					background="rgba(241, 25, 25, 0)"
-					grid-column="2"
-					grid-row="1"
-					quarkly-title="tools grid"
-					margin="64px 0px 64px 0px"
-					width="100%"
-					grid-auto-columns="4"
-					overflow-x="hidden"
-					grid-gap="32px"
-				>
-					<Components.ToolCard10>
-						<Override slot="image" />
-						<Override slot="text1" />
-					</Components.ToolCard10>
-					<Components.ToolCard10 grid-column="2" />
-					<Components.ToolCard10 grid-column="3" />
-					<Components.ToolCard10 grid-column="4" />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 grid-column="auto" />
-					<Components.ToolCard10 grid-column="auto" />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-					<Components.ToolCard10 />
-				</Box>
+		<ToolCardGrid />
 			</Box>
 			<Hr
 				position="absolute"
