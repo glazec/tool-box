@@ -16,8 +16,8 @@ const defaultProps = {
   "border-radius": "5px",
   "hover-border-color": "rgba(47, 107, 255, 0.56)",
   "hover-border-radius": "15px",
-  "max-width": "386px",
-  "max-height": "386px",
+  "max-width": "500px",
+  "max-height": "500px",
   "hover-transition": "all 0.8s --transitionTimingFunction-easeOut 0.5s",
   "grid-column": "auto",
   position: "relative",
@@ -167,15 +167,14 @@ const ToolCard = (props) => {
 
   return (
     <Box {...rest}>
-      {props.status &&
-        <Icon {...override("icon")} />
-        }
-     
-      <Box {...override("box")}>
-        <Image {...override("image")} />
-        <Text {...override("text")} />
-        <Text {...override("text1")} />
-      </Box>
+      {props.status && <Icon {...override("icon")} />}
+      <center>
+        <Box {...override("box")}>
+          <Image {...override("image")} />
+          <Text {...override("text")} />
+          <Text {...override("text1")} />
+        </Box>
+      </center>
       <Box {...override("box1")} />
       {children}
     </Box>
