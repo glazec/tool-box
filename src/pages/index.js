@@ -2,7 +2,6 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text, Box, Button, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override } from "@quarkly/components";
 import * as Components from "components";
 import ToolCardGrid from "components/ToolCardGrid";
 
@@ -10,11 +9,8 @@ export default () => {
   return (
     <Theme theme={theme}>
       <Helmet>
-        <title>Quarkly export</title>
-        <meta
-          name={"description"}
-          content={"Web site created using quarkly.io"}
-        />
+        <title>ToolBox</title>
+        <meta name={"ToolBox"} content={"ToolBox for Inevitable"} />
         <link
           rel={"shortcut icon"}
           href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"}
@@ -70,21 +66,19 @@ export default () => {
           justify-self="stretch"
           flex="1  5 80%"
         >
-          <Button
-            background="rgba(0, 0, 0, 0)"
-            border-color="#989EAD"
-            border-width="1px"
-            border-style="solid"
-            color="#2F6BFF"
-            border-radius="15px"
+          <Link
+            font="12px sans-serif"
             position="absolute"
             right="16px"
-            top="22px"
+            top="35px"
             disabled={false}
-            type="button"
+            href="https://github.com/glazec/tool-box"
+            text-decoration-line="initial"
+            color="#2F6BFF"
+            hover-color="#3F9BFF"
           >
-            Build your own tool box
-          </Button>
+            Build Your Own ToolBox
+          </Link>
           <Text
             color="--textDark"
             font="--heading2"
@@ -106,7 +100,7 @@ export default () => {
           background="#0000"
         />
       </Box>
-      <Link
+      {/* <Link
         font={"--capture"}
         font-size={"10px"}
         position={"fixed"}
@@ -127,7 +121,7 @@ export default () => {
         target={"_blank"}
       >
         Made on Quarkly
-      </Link>
+      </Link> */}
     </Theme>
   );
 };
