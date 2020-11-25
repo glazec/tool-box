@@ -1,6 +1,7 @@
 import React from "react";
 import { useOverrides } from "@quarkly/components";
 import { Icon, Image, Text, Box, Link } from "@quarkly/widgets";
+import { BsFillCircleFill } from "react-icons/bs";
 const defaultProps = {
   display: "block",
   "flex-direction": "column",
@@ -25,19 +26,22 @@ const overrides = {
   icon: {
     kind: "Icon",
     props: {
-      category: "fa",
-      icon: "FaCircle",
-      right: "auto",
+      right: "492px",
       bottom: "auto",
       display: "inline",
       "align-self": "flex-start",
       width: "auto",
       height: "auto",
       font: "0.3em --fontFamily-googleOpenSans",
-      size: "8px",
+      size: "6px",
       position: "absolute",
-      top: "16px",
+      top: "12px",
       left: "16px",
+      "min-width": "auto",
+      "min-height": "auto",
+      category: "bs",
+      icon: BsFillCircleFill,
+      color: "--backgroundDark",
     },
   },
   box: {
@@ -87,7 +91,6 @@ const overrides = {
       "align-self": "auto",
       font: "--thin16",
       margin: "0 0px 16px 0px",
-      "text-align": "center",
       children: (
         <>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
@@ -95,6 +98,7 @@ const overrides = {
           porttitor rhoncus{" "}
         </>
       ),
+      "text-align": "center",
     },
   },
   box1: {
@@ -140,14 +144,33 @@ const ToolCard = (props) => {
   overrides["text"]["props"]["children"] = props.title;
   overrides["text1"]["props"]["children"] = <>{props.description}</>;
   overrides["image"]["props"]["src"] = props.imageUrl;
+  overrides["box1"]["props"]["children"] = (<>{props.tags.map((value,index)=>{
+        return (
+          <Link
+            href="#"
+            font="12px sans-serif"
+            text-decoration-line="initial"
+            color="rgba(26, 33, 56, 0.46)"
+            hover-color="#1a2138"
+            justify-content="flex-end"
+            margin="0px 0px 0px 8px"
+          >
+            {value}
+          </Link>
+        );
+      })}</>)
   const { override, children, rest } = useOverrides(
     props,
     overrides,
     defaultProps
   );
 
-  return <Box {...rest}>
-      <Icon {...override("icon")} />
+  return (
+    <Box {...rest}>
+      {props.status &&
+        <Icon {...override("icon")} />
+        }
+     
       <Box {...override("box")}>
         <Image {...override("image")} />
         <Text {...override("text")} />
@@ -156,6 +179,7 @@ const ToolCard = (props) => {
       <Box {...override("box1")} />
       {children}
     </Box>
+  );
 };
 
 Object.assign(ToolCard, { ...Box, defaultProps, overrides });
